@@ -1,4 +1,4 @@
-# gymticket
+# GymTicket
 Revolutionizing the way a person visits the gym.
 
 GymTicket is an Android application which aims to replace the traditional way of getting a gym’s membership by a new and innovative way which is helpful for both the customer and the industry.
