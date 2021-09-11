@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/crossline_dots">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/custom_refresh_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"/>
+
+<!--ProgressBar
+    android:id="@+id/custom_refresh_recycler_view_progressbar"
+    style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundGravity="center_vertical"
+    android:visibility="visible" /-->
+
+    <TextView
+        android:id="@+id/viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/custom_refresh_recycler_view"
+        android:text="VIEW ALL >>"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_margin="13dp" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/BuyM"
+        android:layout_width="151dp"
+        android:layout_height="143dp"
+        android:layout_below="@+id/viewAll"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BUY MEMBERSHIP"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Chat"
+        android:layout_width="151dp"
+        android:layout_height="143dp"
+        android:layout_below="@+id/viewAll"
+        android:layout_toRightOf="@id/BuyM"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CHAT WITH PROFESSIONAL"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/Articles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BuyM"
+        android:text="Fitness Articles and Motivation"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_margin="13dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/articleRecyclerView"
+        android:layout_below="@+id/Articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</RelativeLayout>
+</ScrollView>

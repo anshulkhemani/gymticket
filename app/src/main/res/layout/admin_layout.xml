@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/register_gym"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#842548"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register New Gym"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/register_professional"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#842548"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register New Professional"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Manage_users"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#842548"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Manage Users"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/manage_articles"
+        android:layout_width="match_parent"
+        android:backgroundTint="#842548"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Manage Articles"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/update_membership"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#842548"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Update Membership Plans"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/generate_reports"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#842548"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Generate Reports"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/admin_logout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#842548"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Logout"
+            android:layout_marginTop="17dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

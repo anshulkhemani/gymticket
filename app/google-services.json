@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "145628861433",
+    "firebase_url": "https://gymticket.firebaseio.com",
+    "project_id": "gymticket",
+    "storage_bucket": "gymticket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145628861433:android:587a8aa8ab4c0ca4",
+        "android_client_info": {
+          "package_name": "com.xica.gymticket.gymticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145628861433-0t9ihbaesfohf1vdmsimnkt6ag4rdqmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xica.gymticket.gymticket",
+            "certificate_hash": "3501862e02ff5e7d31e9db7d8feb6bc3abad6a67"
+          }
+        },
+        {
+          "client_id": "145628861433-74f0cfjkjmsr3msjuljs52s7f18dr67l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt-A_4H8J28eEqpTXuJOLA4JJhNS9TkgE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145628861433-74f0cfjkjmsr3msjuljs52s7f18dr67l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

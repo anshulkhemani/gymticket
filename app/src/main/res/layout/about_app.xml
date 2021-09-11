@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:text="GymTicket is your app based pass to workout anywhere, anytime across 3000+ gyms and fitness studios in Ahmedabad, Vadodara and Surat. A one-touch solution to achieve all your health and fitness goals. GymTicket gives you the flexibility to workout whenever you want, however you want and wherever you want.
+
+With GymTicket , you have access to unparalleled variety of workout routines - Yoga, Zumba, Aerobics, Bollywood Dance, MMA, Cross Fit and many more.
+
+We are successfully removing friction and creating marketplace efficiencies through technology and bringing in the age of in India. This is how we are enhancing the fitness ecosystem:
+
+USER: GymTicket makes fitness accessible by making it economical, convenient and fun. We break the main barriers to fitness – price, fixed schedules and boring routine
+
+GYMS/FITNESS STUDIOS: GymTicket helps them increase their utilization rates and generate additional revenue by providing tech enabled services. With GymTicket , gyms and fitness studios manage their business needs efficiently and generate cost savings.
+
+With your GymTicket , you can also get specially curated workout guides and diet plans – Six Pack Abs to strengthen your core, Dolay Sholay to peak your biceps, Pecs of Steel for that superhuman chest, Bikini Bod to flaunt your summer body, Sexy Calves for those toned legs and 36-24-26 for achieving the perfect figure everyone desires.
+
+So, get your GymTicket now and achieve all your health and fitness goals in a single click. #GetSetSweat
+
+Want to reach us?
+Ahmedabad, Gujarat, India. Pin Code: 380006
+Call: 7874010942"
+        android:textSize="12sp"/>
+        
+
+</LinearLayout>
+</ScrollView>

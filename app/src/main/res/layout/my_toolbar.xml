@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:src="@mipmap/location_shortcut"
+        android:background="?attr/actionBarItemBackground"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:id="@+id/icon_loc"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView android:text="Naroda"
+        android:background="?attr/actionBarItemBackground"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/text_locality"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="7dp"
+        android:textColor="#FFF"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/icon_loc"
+        android:layout_alignParentTop="true"/>
+
+    <TextView android:text="Ahmedabad"
+        android:background="?attr/actionBarItemBackground"
+        android:layout_marginTop="21dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="centerInside"
+        android:id="@+id/text_city"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="7dp"
+        android:textColor="#FFF"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/text_locality"
+        android:layout_toRightOf="@+id/icon_loc"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/action_profile"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

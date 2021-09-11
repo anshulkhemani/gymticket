@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#99aaff">
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/profile_image_edit"
+        android:src="@drawable/ic_launcher_background"
+        app:shadow="true"
+        android:layout_marginStart="130dp"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/HintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+        <android.support.design.widget.TextInputEditText
+            android:color="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#000000"
+            android:id="@+id/dob_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="Date of birth"
+            android:clickable="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/edit_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="15sp"
+        android:layout_marginTop="16dp"
+        />
+    <Spinner
+        android:id="@+id/city_edit_spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:popupBackground="#e43f3f"
+        style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+    <TextView
+        android:id="@+id/gender_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="15sp"
+        android:layout_marginTop="16dp"
+        />
+    <RadioGroup
+        android:id="@+id/edit_gender_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <RadioButton
+            android:id="@+id/radioM_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/radioF_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="Female"
+            />
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/HintText"
+        android:id="@+id/addressV_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone">
+        <android.support.design.widget.TextInputEditText
+            android:color="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#000000"
+            android:id="@+id/addressR_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Address"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/hw_edit">
+
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/weightR_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Weight (in KGs)"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/heightR_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Height (in cms)"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/profession_edit"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/dietitian_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietitian" />
+
+        <CheckBox
+            android:id="@+id/trainer_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trainer" />
+
+        <CheckBox
+            android:id="@+id/yoga_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga Teacher" />
+
+    </LinearLayout>
+
+        <android.support.design.widget.TextInputEditText
+            android:color="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#000000"
+            android:id="@+id/timings_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:inputType="text"
+            android:text="6:00 - 23:00"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/save_changes"
+        android:layout_width="fill_parent"
+        android:background="#11aaff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="SAVE CHANGES"/>
+
+</LinearLayout>

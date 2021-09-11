@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#e43f3f">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:id="@+id/linearLayout1">
+
+        <ImageView android:src="@mipmap/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginBottom="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/nameR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Full name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginBottom="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/emailR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginBottom="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/phoneR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Phone number"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginBottom="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/passwordR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Type Label -->
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/user_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="User Type"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Date of birth"
+                android:clickable="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/city_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            />
+        <Spinner
+            android:id="@+id/pref_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:popupBackground="#e43f3f"
+            style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="Male"
+                />
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="Female"
+                />
+        </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp">
+    <android.support.design.widget.TextInputLayout
+        app:hintTextAppearance="@style/HintText"
+        android:id="@+id/addressV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone">
+        <android.support.design.widget.TextInputEditText
+            android:color="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#000000"
+            android:id="@+id/addressR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Address"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/weightR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Weight (in KGs)"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            app:hintTextAppearance="@style/HintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+            <android.support.design.widget.TextInputEditText
+                android:color="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#000000"
+                android:id="@+id/heightR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Height (in cms)"/>
+        </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:id="@+id/profession">
+
+    <CheckBox
+        android:id="@+id/dietitian_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietitian" />
+
+    <CheckBox
+    android:id="@+id/trainer_check"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Trainer" />
+
+    <CheckBox
+        android:id="@+id/yoga_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yoga Teacher" />
+
+</LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/email_register_button"
+            android:layout_width="fill_parent"
+            android:background="#cc1D1D"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="CREATE ACCOUNT"/>
+
+        </LinearLayout>
+    </ScrollView>
